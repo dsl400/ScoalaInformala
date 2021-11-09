@@ -6,12 +6,10 @@ print(my_list,'<<<< lista initala')
 print(list_copy,'<<<< copie sortata ascendent')
 
 print()
-list_copy.reverse()
 print(my_list,'<<<< lista initala')
-print(list_copy,'<<<< copie sortata descendent')
+print(list_copy[::-1],'<<<< copie sortata descendent')
 
 print()
-list_copy.reverse()
 print(list_copy[1::2],'<<< numere pare')
 
 print()
