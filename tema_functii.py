@@ -27,8 +27,10 @@ def sum_recursive(n):
     else:
         #adaugam numere impare
         sum_odd += n 
+
     #urmatorul n devine n-1 daca n este pozitiv
     next_n = n-1 
+    
     if n < 0:
         #urmatorul n devine n+1 daca n este negativ
         next_n = n+1
@@ -41,6 +43,7 @@ def sum_recursive(n):
     _sum_n, _sum_odd, _sum_even = sum_recursive(next_n) 
 
     return sum_n + _sum_n, sum_odd + _sum_odd, sum_even + _sum_even
+
 
 def print_input():
     in_value = input('introduceti un numar: ')
