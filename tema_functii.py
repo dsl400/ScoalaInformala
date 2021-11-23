@@ -1,7 +1,6 @@
 
 def sum_args(*args,**kwargs):
     result = 0
-    args += tuple(kwargs.values())
     for arg in args:
         arg_type = type(arg)
         if arg_type is not int and arg_type is not float:
