@@ -9,14 +9,12 @@ class Fractie():
         return f'{self.numarator}/{self.numitor}'
     
     def __add__(self,fractie):
-        # print(self.numarator,self.numitor,fractie.numarator,fractie.numitor)
         return Fractie(
             self.numarator * fractie.numitor + fractie.numarator  * self.numitor,
             self.numitor * fractie.numitor
         )
     
     def __sub__(self,fractie):
-        # print(self.numarator,self.numitor,fractie.numarator,fractie.numitor)
         return Fractie(
             self.numarator * fractie.numitor - fractie.numarator  * self.numitor,
             self.numitor * fractie.numitor
