@@ -25,10 +25,3 @@ class Fractie():
     def inverse(self):
         return Fractie(self.numitor,self.numarator)
 
-    
-
-a = Fractie(1,2)
-b = Fractie(3,4)
-
-print(a,b,a+b,a-b,a.inverse())
-a+b
