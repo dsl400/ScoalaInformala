@@ -1,0 +1,146 @@
+[
+{
+    "model": "users.authuser",
+    "pk": 1,
+    "fields": {
+        "password": "pbkdf2_sha256$320000$Hq9IJjWaNxDImhypUOSyXH$OeVhNWybz19MhCUezoWUUVP0eu4oqoWb+oGeJIxF7+8=",
+        "last_login": "2022-03-03T17:53:14.242Z",
+        "is_superuser": true,
+        "username": "admin",
+        "first_name": "admin",
+        "last_name": "admin",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2022-03-03T08:06:25.423Z",
+        "email": "admin@locdedatcucapul.ro",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "users.authuser",
+    "pk": 2,
+    "fields": {
+        "password": "pbkdf2_sha256$320000$Pd3sl7UohcmCVQHHYfqdx3$Kw1nTwE47FtUM3qg+NXA/WxRvi6PIu/aB3IUKZlsTL4=",
+        "last_login": "2022-03-03T14:09:37.877Z",
+        "is_superuser": false,
+        "username": "dsl400",
+        "first_name": "dsl",
+        "last_name": "dsl",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2022-03-03T08:08:06.321Z",
+        "email": "dsl400@gmail.com",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "users.authuser",
+    "pk": 3,
+    "fields": {
+        "password": "",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "tammy82",
+        "first_name": "Tammy",
+        "last_name": "Williamson",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2022-03-03T08:10:33.817Z",
+        "email": "tammy.williamson@george.com",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "users.authuser",
+    "pk": 4,
+    "fields": {
+        "password": "",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "linda86",
+        "first_name": "Linda",
+        "last_name": "Green",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2022-03-03T08:10:39.857Z",
+        "email": "linda.green@brown.com",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "users.authuser",
+    "pk": 5,
+    "fields": {
+        "password": "",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "matthew71",
+        "first_name": "Matthew",
+        "last_name": "Anderson",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2022-03-03T08:10:45.883Z",
+        "email": "matthew.anderson@alexander-johnson.com",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "users.authuser",
+    "pk": 6,
+    "fields": {
+        "password": "",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "arthur73",
+        "first_name": "Arthur",
+        "last_name": "Stevens",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2022-03-03T08:10:54.908Z",
+        "email": "arthur.stevens@blanchard-simpson.com",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "users.authuser",
+    "pk": 7,
+    "fields": {
+        "password": "",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "denise71",
+        "first_name": "Denise",
+        "last_name": "Griffin",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2022-03-03T08:10:59.943Z",
+        "email": "denise.griffin@lane.com",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "users.authuser",
+    "pk": 8,
+    "fields": {
+        "password": "",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "steven82",
+        "first_name": "Steven",
+        "last_name": "Orozco",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2022-03-03T08:11:08.974Z",
+        "email": "steven.orozco@turner.com",
+        "groups": [],
+        "user_permissions": []
+    }
+}
+]
