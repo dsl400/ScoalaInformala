@@ -1,0 +1,9 @@
+{% extends 'base.html' %} {% load static %}{% load crispy_forms_tags %} {% block title %} {% endblock %} {% block content %}
+<div class="container contact">
+    <h1>Opinia ta conteaza!</h1>
+    <form class="contact-form" action="{% url 'contact:send_message' %}" method="post" enctype="multipart/form-data">
+        {% csrf_token %} {{ form | crispy }}
+        <input type="submit" value="Posteaza" />
+    </form>
+</div>
+{% endblock %}

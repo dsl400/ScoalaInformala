@@ -1,0 +1,22 @@
+{% extends 'base.html' %} {% load crispy_forms_tags %} {% block title %}
+<title>Autentificare - Loc de dat cu capul</title>
+{% endblock %} {% block content %}
+
+<form class="login-form" action="{% url 'users:login' %}" method="post">
+    <fieldset>
+        <legend>Autentificare</legend>
+        {% csrf_token %} {{ form | crispy }}
+
+        <input type="submit" value="Login" />
+    </fieldset>
+    {% if messages %}
+    <br/>
+    <br/>
+    <ul class="messages">
+        {% for message in messages %}
+        <li{% if message.tags %} class="{{ message.tags }}" {% endif %}>{{ message }}</li>
+            {% endfor %}
+    </ul>
+    {% endif %}
+</form>
+{% endblock %}

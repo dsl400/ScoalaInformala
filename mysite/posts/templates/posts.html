@@ -1,0 +1,45 @@
+ {% block content %} 
+ {% if post_list %}
+ {% for post in post_list %}
+<div class="post">
+    <div class="creator">#{{post.id}} {{post.creator.username}}</div>
+    <q class="text">{{post.text}}</q>
+    <div class="created">{{post.created}}</div>
+    <div class="votes">
+        <a href="{% url 'posts:vote_down'  post_id=post.id %}"><i class="bi bi-caret-down-fill"></i></a> {{post.votes}}
+        <a href="{% url 'posts:vote_up'  post_id=post.id %}"><i class="bi bi-caret-up-fill"></i></a>
+    </div>
+    <div class="author">
+        {{post.author}}
+    </div>
+</div>
+
+{% endfor %} 
+{% else %}
+    <div class="no-post">
+        Nu avem avem ganduri de aratat! Ai putea adauga tu un gand!
+    </div>
+{% endif %}
+{% if is_paginated %}
+<div class="d-flex  flex-column ">
+    <ul class="pagination d-flex flex-row justify-content-center">
+        {% if page_obj.has_previous %}
+        <li><a class="btn" href="?page={{ page_obj.previous_page_number }}">&laquo;</a></li>
+        {% else %}
+        <li class="disabled btn"><span>&laquo;</span></li>
+        {% endif %} {% for i in paginator.page_range %} {% if page_obj.number == i %}
+        <li class="active btn btn-info"><span>{{ i }} <span class="sr-only">(curent)</span></span>
+        </li>
+        {% else %}
+        <li><a class="btn" href="?page={{ i }}">{{ i }}</a></li>
+        {% endif %} {% endfor %} {% if page_obj.has_next %}
+        <li><a class="btn" href="?page={{ page_obj.next_page_number }}">&raquo;</a></li>
+        {% else %}
+        <li class="disabled btn"><span>&raquo;</span></li>
+        {% endif %}
+    </ul>
+    <div class="d-flex flex-row justify-content-center">
+        <span class="align-right">Showing {{ page_obj.start_index }}-{{ page_obj.end_index }} of {{ page_obj.paginator.count }}</span>
+    </div>
+</div>
+{% endif %} {% endblock %}

@@ -1,0 +1,11 @@
+<nav class="d-flex flex-row justify-content-center">
+    <a {% if request.path == '/' %}class="active"{% endif %}  href="/">Homepage</a> {% if request.user.is_authenticated %} {% if request.user.is_superuser %}
+    <a href="/admin">Admin</a> {% endif %}
+    <a {% if request.path == '/posts/' %}class="active"{% endif %}  href="{% url 'posts:posts' %}">My Posts</a>
+    <a {% if request.path == '/users/profile' %}class="active"{% endif %}  href="{% url 'users:profile' %}">Profile</a>
+    <a {% if request.path == '/users/logout' %}class="active"{% endif %}  href="{% url 'users:logout' %}">Logout</a> {% else %}
+    <a {% if request.path == '/users/login' %}class="active"{% endif %}  href="{% url 'users:login' %}">Login</a>
+    <a {% if request.path == '/users/register' %}class="active"{% endif %}  href="{% url 'users:register' %}">Register</a> {% endif %}
+    <a {% if request.path == '/contact/' %}class="active"{% endif %}  href="{% url 'contact:contact' %}">Contact</a>
+    <a {% if request.path == '/about' %}class="active"{% endif %}  href="/about">Despre</a>
+</nav>

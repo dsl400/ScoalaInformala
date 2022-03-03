@@ -1,0 +1,55 @@
+{% extends 'base.html' %} {% load static %}{% load crispy_forms_tags %} {% block title %} {% endblock %} 
+{% block content %}
+<div class="container contact">
+    <h1>Loc de dat cu capul!</h1>
+    <hr>
+    <h2>Despre</h2>
+    <p>
+        Tocul de sus al usii, usa deschisa de la dulap, intrarea in beci, etc. Momentul &ldquo;AHA!&rdquo; din viata ta.
+    </p>
+    <hr>
+    <h2>Descriere</h2>
+    <p>
+        Scopul aplicatie este sa demonstreze abilitatea elevului Sasek Valentin de a folosi urmatoarele tehnologii:
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Python</li>
+        <li>Django</li>
+        <li>Mysql</li>
+    </ul>
+    </p>
+    <hr>
+    <h2>Structura aplicatie</h2>
+    <h3>Homepage</h3>
+    <p>
+    <ul>
+        <li>Formular adaugare postare disponibil doar pentru utilizatorii autentificati</li>
+        <li>Lista paginata postari ordonate recente postari</li>
+    </ul>
+    </p>
+    <h3>My Posts</h3>
+    <p>
+    <ul>
+        <li>Disponibila doar pentru utilizatorii autentificati</li>
+        <li>Formular adaugare postare</li>
+        <li>Lista paginata cu postarile utilizatorului</li>
+    </ul>
+    </p>
+    <h3>Profile</h3>
+    <p>
+    <ul>
+        <li>Disponibila doar pentru utilizatorii autentificati</li>
+        <li>Formular adaugare / modificare avatar</li>
+        <li>Formular modificare profil utilizator</li>
+    </ul>
+    </p>
+    <h3>Contact</h3>
+    <p>
+    <ul>
+        <li>Formular contact</li>
+    </ul>
+    </p>
+
+</div>
+{% endblock %}

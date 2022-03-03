@@ -1,0 +1,25 @@
+{
+    "restoreTerminals.terminals": [
+        {
+            "splitTerminals": [
+              {
+                "name": "server",
+                "commands": ["source ../bin/activate","python manage.py runserver"]
+              }
+            ]
+          },
+          {
+            "splitTerminals": [
+              {
+                "name": "work",
+              }
+            ]
+          }
+    ],
+    "python.venvFolders": [
+      "~/school/proiect"
+  ],
+  "code-runner.executorMap": {
+    "python": "\"$pythonPath\" $fullFileName",
+  },
+}

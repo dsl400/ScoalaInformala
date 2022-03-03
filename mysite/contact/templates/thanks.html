@@ -1,0 +1,16 @@
+{% extends 'base.html' %} {% block content %}
+<div class="container contact">
+   <h1>Mesajul a fost trimis</h1>
+   <h2>Un gand random din partea noastra</h2>
+   <div class="post">
+    <q class="text">{{post.text}}</q>
+    <div class="author">
+        {{post.author}}
+    </div>
+
+</div>
+<div style="text-align: center;">
+    <a href="/">Catre prima pagina</a>
+</div>  
+
+{% endblock %}

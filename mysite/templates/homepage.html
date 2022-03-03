@@ -1,0 +1,11 @@
+{% extends 'base.html' %} {% load static %}{% load crispy_forms_tags %} {% block title %} {% endblock %} {% block content %}
+<div class="container posts">
+    <!-- {% if request.user.is_anonymous == False %}
+    <form class="new-post" action="{% url 'posts:create_post' %}" method="post" enctype="multipart/form-data">
+        {% csrf_token %} {{ form | crispy }}
+        <input type="submit" value="Posteaza" />
+    </form>
+    {% endif %} -->
+    {% include "posts.html" %}
+</div>
+{% endblock %}

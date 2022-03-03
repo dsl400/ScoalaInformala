@@ -1,0 +1,163 @@
+html,
+body {
+    min-height: 100%;
+}
+
+body {
+    background: radial-gradient(#ab907b, #d2ad81);
+    background-repeat: no-repeat;
+    background-position: fixed;
+    background-attachment: fixed;
+    padding-top: 100px;
+    padding-bottom: 60px;
+    /* padding-top: 100px; */
+}
+h1{
+    text-align: center;
+}
+.logout h1,
+.contact h1{
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+.logout h2,
+.contact h2{
+    text-align: center;
+}
+
+nav {
+    height: 100px;
+    background: url('../img/old-paper-menu.png') no-repeat center;
+    background-position: center bottom;
+    background-size: 100% auto;
+    position: fixed;
+    z-index: 1000;
+    left: 10%;
+    right: 10%;
+    top: 0;
+}
+
+nav a {
+    line-height: 60px;
+    font-size: 30px;
+    margin: 8px 16px;
+    color: #333;
+    font-family: georgia, serif;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: brown;
+    text-decoration: none;
+}
+
+nav a.active{
+    text-decoration: underline;
+}
+
+
+div.post {
+    padding: 50px 80px;
+    height: 160px;
+    width: 750px;
+    background: url('../img/old-paper-menu.png') no-repeat center;
+    background-size: 100% 90%;
+    position: relative;
+    margin: 0 auto;
+}
+.post .author{
+    position: absolute;
+    bottom: 24px;
+    right: 24px;
+    font-size: 14px;
+}
+.post .creator{
+    position: absolute;
+    top: 20px;
+    left: 40px;
+    font-size: 14px;
+    color: #555
+}
+
+
+.post .text {
+    left: 80px;
+    right: 80px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    font-size: 20px;
+    line-height: 22px;
+}
+
+.post .created {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: #cacaca;
+    font-size: 14px;
+    color: #555
+}
+
+.post .votes {
+    position: absolute;
+    bottom: 16px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.post .votes a {
+    color: brown;
+}
+
+.post .votes a:hover {
+    color: black;
+}
+
+.register-form,
+.login-form {
+    width: 400px;
+    margin: 100px auto;
+}
+
+.container form{
+    width: 60%;
+    margin: 0 auto;
+}
+.container form #div_id_text textarea{
+    height: 100px;
+}
+
+.no-post{
+    text-align: center;
+    width: 100%;
+    margin-top: 100px;
+}
+
+#div_id_author{
+    width: 75%;
+}
+.new-post{
+    position: relative;
+}
+.new-post input[type=submit]{
+    width: 20%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 38px;
+}
+form .messages{
+    padding: 0;
+}
+.messages .error{
+    list-style: none;
+    padding: 8px;
+    text-align: center;
+    color: red;
+    font-weight: bold;
+}
+
